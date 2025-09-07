@@ -1,5 +1,5 @@
 /*=============== HOME SECTION ===============*/
-.home h1{
+.home-section h1{
   font-size: 3.5rem;
   font-weight: bolder;
   text-align: center;
@@ -7,7 +7,7 @@
 }
 
 /*=============== ABOUT SECTION ===============*/
-.about {
+.about-section {
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +158,7 @@
   margin: 50px 0;
 }
 
-/*=============== FORM ===============*/
+/*=============== CONTACT SECTION ===============*/
 form {
   width: 100%;
   max-width: 600px;
@@ -229,7 +229,7 @@ textarea {
 }
 
 /*=============== MEDIA QUERY ===============*/
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   html {
     scroll-behavior: smooth;
   }
@@ -306,4 +306,4 @@ textarea {
       line-height: 2.5rem;
     }
   }
-}
+} */
