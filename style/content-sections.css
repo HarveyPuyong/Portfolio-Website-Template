@@ -17,15 +17,24 @@
   margin: 0.5rem 0;
 }
 
-.language {
+.about-section .skill {
+  background-color: var(--accent-color);
+  color: #fff;
+  line-height: 35px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.about-section .language {
   margin-bottom: 15px;
 }
 
-.language p {
+.about-section .language-label {
   margin: 0;
 }
 
-.bar {
+.about-section .language-bar {
   background: rgba(0, 0, 0, 0.1);
   display: block;
   height: 8px;
@@ -33,30 +42,18 @@
   overflow: hidden;
 }
 
-.bar span {
+.about-section .language-bar span {
   height: 8px;
   float: left;
   background: var(--accent-color);
 }
 
-.polish {
+.about-section .language .polish {
   width: 100%;
 }
 
-.english {
+.about-section .language .english {
   width: 75%;
-}
-
-.french {
-  width: 50%;
-}
-
-.skill {
-  background-color: var(--accent-color);
-  color: #fff;
-  line-height: 35px;
-  padding: 5px 10px;
-  border-radius: 15px;
 }
 
 /*=============== PROJECTS SECTION ===============*/
@@ -64,7 +61,7 @@
   margin: 20px 0;
 }
 
-.project-tile {
+.project-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -72,13 +69,13 @@
   background: var(--light-grey);
   color: transparent;
   width: 100%;
-  height: 300px;
+  height: 215px;
   margin: auto;
   overflow: hidden;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.project-tile img {
+.project-card__img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -87,7 +84,7 @@
   filter: contrast(70%) brightness(110%) grayscale(20%);
 }
 
-.overlay {
+.project-card__overlay {
   background: #a8858fe0;
   display: flex;
   flex-direction: column;
@@ -99,7 +96,7 @@
   transition: 0.5s ease;
 }
 
-.project-description {
+.project-details {
   line-height: normal;
   max-width: 200px;
   margin: 20px;
@@ -108,24 +105,24 @@
   transition: 0.5s ease;
 }
 
-.project-tile:hover .overlay {
+.project-card:hover .project-card__overlay {
   width: 100%;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-.project-tile:hover .project-description {
+.project-card:hover .project-details {
   left: 0;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
 /*=============== EXPERIENCE SECTION ===============*/
-.timeline {
+.timeline-container {
   position: relative;
 }
 
-.timeline::before {
+.timeline-container::before {
   content: "";
   position: absolute;
   width: 2px;
@@ -150,7 +147,7 @@
   border-radius: 50%;
 }
 
-.timeline-items {
+.timeline-item-list {
   margin-left: 20px;
 }
 
@@ -159,7 +156,7 @@
 }
 
 /*=============== CONTACT SECTION ===============*/
-form {
+.contact-form {
   width: 100%;
   max-width: 600px;
 }
@@ -203,29 +200,29 @@ textarea:focus {
 }
 
 textarea {
-  height: 4rem;
+  height: 5rem;
   border: none;
   border-bottom: solid 2px var(--accent-color);
+  padding-top: 8px;
 }
 
-.submit-btn {
-  color: var(--accent-color);
-  background-color: #fff;
+.contact-form .submit-btn {
   padding: 10px 20px;
   margin: 50px 0;
   border-radius: 30px;
   border: none;
-  transition: 0.2s linear;
   transition-property: background-color, color;
+  transition: 0.2s linear;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: var(--accent-color);
 }
 
 .submit-btn:hover {
-  color: #fff;
-  background-color: var(--accent-color);
   transition: 0.2s linear;
   transition-property: background-color, color;
   cursor: pointer;
+  background-color: #8d495d;
 }
 
 /*=============== MEDIA QUERY ===============*/
