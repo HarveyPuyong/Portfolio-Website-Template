@@ -18,7 +18,7 @@
     <div class="main-wrapper">
         <!--=============== NAVIGATION MENU ===============-->
         <div class="navigation-list">
-            <a href="#welcome-section" class="navigation-list__icon fas fa-home"></a>
+            <a href="#welcome-section" class="navigation-list__icon fas fa-home active"></a>
             <a href="#about" class="navigation-list__icon fas fa-user"></a>
             <a href="#projects" class="navigation-list__icon fas fa-code"></a>
             <a href="#experience" class="navigation-list__icon fas fa-briefcase"></a>
@@ -29,8 +29,8 @@
         <div class="portfolio">
             <div class="main-profile">
                 <img class="main-profile__img"
-                    src="https://images.pexels.com/photos/2389349/pexels-photo-2389349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="" />
+                    src="images-and-icons/images/meowish profile.jpeg"
+                    alt="profile-picture" />
 
                 <h2 class="main-profile__skill">Programmer / Content Creator</h2>
                 
@@ -66,32 +66,43 @@
                         </p>
                     </div>
                     
-                    <div class="d-grid">
-                        <div class="about-item skills">
-                            <h1 class="about-item__heading">Skills</h1>
-                            <span class="skill">HTML</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Node.js</span>
-                            <span class="skill">React</span>
-                            <span class="skill">SQL</span>
-                            <span class="skill">Git</span>
-                            <span class="skill">API</span>
-                            <span class="skill">Unix/Linux</span>
-                            <span class="skill">Jira</span>
-                            <span class="skill">Confluence</span>
-                            <span class="skill">Figma</span>
+                    <div class="tools-and-languge-container d-grid">
+                        <div class="about-item tools-container">
+                            <h1 class="about-item__heading">Tools</h1>
+
+                            <div class="tools-list">
+                                <div class="tool">
+                                    <img class="tool-icon" src="images-and-icons/icons/html-icon.png" alt="HTML Icon">
+                                    <p class="tool-label">HTML</p>
+                                </div>
+                                <div class="tool">
+                                    <img class="tool-icon" src="images-and-icons/icons/css-icon.png" alt="CSS Icon">
+                                    <p class="tool-label">CSS</p>
+                                </div>
+                                <div class="tool">
+                                    <img class="tool-icon" src="images-and-icons/icons/js-icon.png" alt="JS Icon">
+                                    <p class="tool-label">JS</p>
+                                </div>
+                                <div class="tool">
+                                    <img class="tool-icon" src="images-and-icons/icons/html-icon.png" alt="HTML Icon">
+                                    <p class="tool-label">HTML</p>
+                                </div>
+                                <div class="tool">
+                                    <img class="tool-icon" src="images-and-icons/icons/css-icon.png" alt="CSS Icon">
+                                    <p class="tool-label">CSS</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="about-item language-list">
                             <h1 class="about-item__heading">Languages</h1>
                             <div class="language">
                                 <p class="language-label">Tagalog</p>
-                                <p class="language-bar"><span class="polish"></span></p>
+                                <p class="language-bar"><span class="first-bar"></span></p>
                             </div>
                             <div class="language">
                                 <p class="language-label">English</p>
-                                <p class="language-bar"><span class="english"></span></p>
+                                <p class="language-bar"><span class="second-bar"></span></p>
                             </div>
                         </div>
                     </div>
@@ -100,6 +111,7 @@
                 <!--=============== PROJECTS ===============-->
                 <section class="projects-section" id="projects">
                     <h1 class="section-heading">Projects</h1>
+
                     <div class="d-grid project-list">
                         <div class="project-card">
                             <img class="project-card__img" src="https://shots.codepen.io/nietoperq/pen/BaPJqGW-512.webp?version=1674304822"
@@ -171,6 +183,15 @@
                                 </p>
                             </div>
                             <div class="timeline-item">
+                                <div class="timeline-date">2022 - now</div>
+                                <h3 class="timeline-title">timeline item 1</h3>
+                                <p class="timeline-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ab iusto accusantium nostrum eligendi debitis quisquam.
+                                    Corporis at voluptatem culpa officia.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
                                 <div class="timeline-date">2015 - 2022</div>
                                 <h3 class="timeline-title">timeline item 2</h3>
                                 <p class="timeline-description">
@@ -205,9 +226,8 @@
                         <div class="input-box">
                             <textarea name="text" class="message" placeholder="Message..."></textarea>
                         </div>
-                        <div class="input-box">
-                            <input type="submit" class="submit-btn" id="submit" value="submit" />
-                        </div>
+
+                        <button type="submit" class="submit-btn" id="submit">Button</button>
                     </form>
                 </section>
             </div>

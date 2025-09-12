@@ -1,10 +1,13 @@
 /*=============== VARIABLES ===============*/
 :root {
-  --accent-color: #a8858f;
-  --background-color: #302729;
-  --background-color-2: #362b2e;
-  --light-grey: rgb(194, 194, 194);
-  --border-radius: 30px;
+  --accent-color: #41339b;
+  --background-color:  #0E2148;
+  --main-profile-bg: #173264;
+  --main-profile-font-clr: rgb(255, 255, 255);
+  --content-section-bg: #e1e1e1;
+  --sections-heading-font-hightlight: #41339b;
+  --sections-font-clr: rgba(0, 0, 0, 0.76);
+  --side-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.387);
 }
 
 /*=============== SCROLLBAR ===============*/
@@ -31,13 +34,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-html {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--background-color);
+  box-sizing: border-box;
 }
 
 a {
@@ -59,48 +56,55 @@ h2 {
   font-weight: normal;
 }
 
-.d-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 100%;
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+  overflow: hidden;
 }
 
 .main-wrapper {
+  --wrapper-max-width: 1130px;
+  --wrapper-padding: 6%;
+
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  /* flex-direction: column; */
+  
+  gap: 15px;
+  width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
+  min-height: 100%;
+  margin-inline: auto;
+  padding-top: 10px;
 }
 
 .portfolio {
   display: flex;
-  background: var(--background-color-2);
-  height: 80vh;
-  width: 85vw;
-  max-width: 1200px;
-  border-radius: var(--border-radius);
+  flex-direction: column;
+  height: 570px;
+  width: 100%;
+  border-radius: 30px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
 
-/*=============== Content Sections Container ===============*/
-.content-sections {
-  border-radius: var(--border-radius);
-  background: white;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  scroll-behavior: smooth;
-}
+@media(width >= 700px){
+  .main-wrapper{
+    flex-direction: row;
+  }
 
-.content-sections section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-  margin: 0 50px;
-  /* border-bottom: 1px solid black; */
-}
+  .portfolio {
+    flex-direction: row;
+  }
 
+  .content-sections {
+    padding: 0 50px;
+  }
+}
