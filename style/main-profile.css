@@ -1,20 +1,22 @@
-
-/*=============== HEADER ===============*/
 .main-profile {
-  --left-border-radius: 6px; 
+  --top-border-radius: 6px;
+
+  position: fixed;
+  top: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: var(--left-border-radius);
-  border-bottom-left-radius: var(--left-border-radius);
+  width: 94%;
+  height: 350px;
+  border-top-left-radius: var(--top-border-radius);
+  border-top-right-radius: var(--top-border-radius);
   background-color: var(--main-profile-bg);
   color: var(--main-profile-font-clr);
   box-shadow: var(--side-box-shadow);
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left: 0;
+  z-index: 0;
 }
 
 .main-profile__img {

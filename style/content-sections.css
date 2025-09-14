@@ -1,17 +1,18 @@
 
 /*=============== Content Sections Container ===============*/
 .content-sections {
-  --right-border-radius: 6px;
-  border-bottom-right-radius: var(--right-border-radius);
-  border-top-right-radius: var(--right-border-radius);
+  position: relative;
   background: var(--content-section-bg);
   color: var(--sections-font-clr);
   width: 100%;
-  overflow: auto;
+  /* overflow: auto;
   scroll-snap-type: y mandatory; 
   overflow-y: scroll;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;  */
   padding: 0 18px;
+  margin-top: 403px;
+  z-index: 1;
+  height: 100%;
 }
 
 .content-sections section {
@@ -36,8 +37,8 @@
 
 /*=============== HOME SECTION ===============*/
 .home-section{
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 
 .home-section h1{
@@ -51,7 +52,7 @@
 .about-section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .about-section .section-heading{
@@ -65,7 +66,7 @@
 .about-item {
   width: 100%;
   margin: 0.5rem 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .about-item__heading{
@@ -141,7 +142,7 @@
 
 /*=============== PROJECTS SECTION ===============*/
 .projects-section{
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .project-list {
@@ -209,7 +210,7 @@
 
 /*=============== EXPERIENCE SECTION ===============*/
 .experience-section{
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 .timeline-container {
@@ -256,7 +257,7 @@
 
 /*=============== CONTACT SECTION ===============*/
 .contact-section{
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 .contact-section .section-heading{
@@ -323,8 +324,10 @@ textarea {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   color: white;
   font-weight: 600;
+  font-size: 1.1rem;
   background-color: var(--accent-color);
   width: 100%;
+  margin-bottom: 110px;
 }
 
 .submit-btn:hover {
@@ -333,6 +336,38 @@ textarea {
   cursor: pointer;
   background-color: #8d495d;
 }
+
+
+/*=============== FOOTER ===============*/
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.scroll-top-btn{
+  display: flex;
+  gap: 9px;
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  padding: 5px 18px;
+  margin-inline: auto;
+}
+
+.scroll-top-btn__arrow-icon{
+  --size: 19px;
+
+  height: var(--size);
+  width: var(--size);
+}
+
 
 /*=============== MEDIA QUERY ===============*/
 @media(width >= 700px){
