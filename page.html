@@ -35,9 +35,9 @@
                 <h2 class="main-profile__skill">Programmer / Content Creator</h2>
                 
                 <div class="main-profile__socials-list">
-                    <a href="#" target="_blank" class="fab fa-linkedin-in" id="profile-link"></a>
-                    <a href="#" target="_blank" class="fab fa-github"></a>
-                    <a href="#" target="_blank" class="fab fa-codepen"></a>
+                    <a href="#" target="_blank" class="fab fa-facebook" id="profile-link"></a>
+                    <a href="#" target="_blank" class="fab fa-instagram"></a>
+                    <a href="#" target="_blank" class="fab fa-tiktok"></a>
                 </div>
 
                 <a href="files/MyCV.pdf" download="MyCV" class="main-profile__cta">Download CV</a>
@@ -217,14 +217,16 @@
                 <section class="contact-section" id="contact">
                     <h1 class="section-heading">Contact</h1>
                     <form class="contact-form" id="contact-form">
-                        <div class="input-box">
-                            <input type="text" class="text-input" name="name" placeholder="Name" />
+                        <div class="contact-form__inputs-field">
+                            <div class="input-box">
+                                <input type="text" class="text-input" name="name" placeholder="Name" required/>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" class="text-input" name="email" id="email" placeholder="Email" required />
+                            </div>
                         </div>
                         <div class="input-box">
-                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="input-box">
-                            <textarea name="text" class="message" placeholder="Message..."></textarea>
+                            <textarea name="text" class="message" placeholder="Message..." required></textarea>
                         </div>
 
                         <button type="submit" class="submit-btn" id="submit">Button</button>
