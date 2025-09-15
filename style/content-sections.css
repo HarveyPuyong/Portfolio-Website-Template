@@ -21,7 +21,8 @@
 }
 
 .content-sections section:not(:nth-child(1)):not(:nth-child(2)):not(:last-child) {
-  min-height: fit-content
+  min-height: fit-content;
+  padding-top: 5px;
 }
 
 .section-heading{
@@ -414,9 +415,18 @@ footer{
     z-index: 1;
   }
 
+  .experience-section{
+    padding-bottom: 0px;
+  }
+
+  .contact-section{
+    padding-top: 109px !important; 
+    padding-bottom: 100px;
+  }
+
   .contact-form .submit-btn {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   footer{
