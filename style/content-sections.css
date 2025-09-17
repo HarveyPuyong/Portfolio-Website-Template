@@ -190,6 +190,7 @@
 }
 
 .project-card__overlay {
+  position: relative;
   background: #473aa0dd;
   display: flex;
   flex-direction: column;
@@ -202,9 +203,7 @@
 }
 
 .project-details {
-  line-height: 1.2em;
   max-width: 230px;
-  font-size: 0.9rem;
   margin: 20px;
   margin-top: 0;
   position: absolute;
@@ -215,23 +214,44 @@
 
 .project-title{
   margin-bottom: 2px;
+  font-size: 1.3rem;
 }
 
 .project-description{
   opacity: 0.8;
-  line-height: 1.4em;
+  line-height: 1.3em;
+  font-size: 0.9rem;
   text-align: justify;
 }
 
+.project-view-btn{
+  position: absolute;
+  bottom: 10px;
+  left: -250px;
+  transform: translate(-50% -50%);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 40px;
+  color: black;
+  background-color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* Project Overlay When Hover */
 .project-card:hover .project-card__overlay {
   width: 100%;
-  cursor: pointer;
   transition: 0.5s ease;
 }
 
 .project-card:hover .project-details {
   left: 0;
-  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.project-card:hover .project-view-btn{
+  left: 30%;
   transition: 0.5s ease;
 }
 
