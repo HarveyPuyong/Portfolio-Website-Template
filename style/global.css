@@ -11,7 +11,6 @@
 }
 
 /*=============== SCROLLBAR ===============*/
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -30,7 +29,6 @@
 }
 
 /*=============== BASE ===============*/
-
 * {
   padding: 0;
   margin: 0;
@@ -95,10 +93,12 @@ body{
 }
 
 
+
+/*=============== Media Query ===============*/
 @media(width >= 900px){
   body{
     padding-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .main-wrapper{
@@ -107,5 +107,26 @@ body{
 
   .portfolio {
     flex-direction: row;
+    max-height: 10px;
+    width: 100%;
+    transform: scaleX(0.01); 
+    transform-origin: center;  
+    overflow: hidden;
+    animation:profile-animation 3s forwards;
+    animation-delay: 0.5s;
+  }
+}
+
+
+/*=============== Keyframes Animation ===============*/
+@keyframes profile-animation {
+  50% {
+    transform: scaleX(1.001); 
+    max-height: 10px;
+  }
+  100% {
+    transform: scaleX(1.001);
+    max-height: 500px;
+    overflow: hidden;
   }
 }

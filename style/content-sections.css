@@ -141,23 +141,27 @@
   background: #41339bb4;
 }
 
-.about-section .language .first-bar {
+/* .about-section .language .first-bar {
   width: 100%;
 }
 
 .about-section .language .second-bar {
   width: 75%;
-}
+} */
 
 /*=============== PROJECTS SECTION ===============*/
 .projects-section{
   padding-bottom: 120px;
 }
 
+.projects-section .section-heading{
+  padding-bottom: 5px;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 30px;
+  gap: 20px;
   max-width: 100%;
 }
 
@@ -198,12 +202,25 @@
 }
 
 .project-details {
-  line-height: normal;
-  max-width: 200px;
+  line-height: 1.2em;
+  max-width: 230px;
+  font-size: 0.9rem;
   margin: 20px;
+  margin-top: 0;
   position: absolute;
   left: -250px;
+  top: 27px;
   transition: 0.5s ease;
+}
+
+.project-title{
+  margin-bottom: 2px;
+}
+
+.project-description{
+  opacity: 0.8;
+  line-height: 1.4em;
+  text-align: justify;
 }
 
 .project-card:hover .project-card__overlay {
@@ -411,9 +428,15 @@ footer{
     overflow-y: scroll;
     scroll-behavior: smooth; 
     padding: 0 5%;
+    padding-right: 4%;
     margin-top: 0px;
     z-index: 1;
   }
+
+  .project-card {
+    height: 230px;
+  }
+
 
   .experience-section{
     padding-bottom: 0px;

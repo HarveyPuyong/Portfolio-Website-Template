@@ -37,5 +37,15 @@
     flex-direction: column;
     order: 2;
     padding: 20px 10px;
+    opacity: 0;
+    animation: fade-in 1.5s forwards;
+    animation-delay: 3.8s;
+  }
+}
+
+
+@keyframes fade-in {
+  to{
+    opacity: 1;
   }
 }
