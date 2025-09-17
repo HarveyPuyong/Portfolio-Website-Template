@@ -36,7 +36,7 @@ const onscrollElementsAnimation = () => {
    gsap.registerPlugin(ScrollTrigger);
 
   const scrollerTarget = window.innerWidth > 900 ? ".content-sections" : null;
-  const animationStart = window.innerWidth > 900 ? "top 2700%" : "top 95%";
+  const animationStart = window.innerWidth > 900 ? "top 2800%" : "top 98%";
 
   // Sections Elements Animation(Except Language Bar)
   const sectionsElements = document.querySelectorAll(".content-sections section *:not(.language-label):not(.language-bar .bar)");
