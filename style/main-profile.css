@@ -29,13 +29,13 @@
 
 .main-profile__skill {
   line-height: 1.3em;
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 500;
 }
 
 .main-profile__email{
   font-size: 0.9rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   opacity: 0.5;
 }
 
