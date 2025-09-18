@@ -28,7 +28,6 @@ const observeActiveNav = () => {
   });
 }
 
-
 // ================================
 //  ON-SCROLL ELEMENTS ANIMATION
 // ================================
@@ -36,7 +35,7 @@ const onscrollElementsAnimation = () => {
    gsap.registerPlugin(ScrollTrigger);
 
   const scrollerTarget = window.innerWidth > 900 ? ".content-sections" : null;
-  const animationStart = window.innerWidth > 900 ? "top 2800%" : "top 97.2%";
+  const animationStart = window.innerWidth > 900 ? "top 3000%" : "top 97.2%";
 
   // Sections Elements Animation(Except Language Bar)
   const sectionsElements = document.querySelectorAll(".content-sections section *:not(.language-label):not(.language-bar .bar)");
@@ -80,6 +79,27 @@ const onscrollElementsAnimation = () => {
   });
 }
 
+// ================================
+//  TOGGLE MORE PROJECTS
+// ================================
+const toggleMoreProject = () => {
+  const moreProjectsList = document.querySelector('.d-grid.more-project-list');
+  const toggleBtn = document.querySelector('.project-cards-container__toggle-btn');
+
+  toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('see-more');
+
+    if(toggleBtn.classList.contains('see-more')) {
+      toggleBtn.innerText = 'See Less'
+      moreProjectsList.style.display = 'grid'
+    }else{
+      toggleBtn.innerText = 'See More'
+      moreProjectsList.style.display = 'none'
+    } 
+  });
+}
+
+
 
 // ================================
 //  MAIN FUNCTION
@@ -87,6 +107,7 @@ const onscrollElementsAnimation = () => {
 function main(){
   observeActiveNav();
   onscrollElementsAnimation();
+  toggleMoreProject()
 }
 
 main();
