@@ -1,9 +1,9 @@
 import { personalData } from "../data/personal-data.js";
 
+
 export default function emailSender() {
   const { publicKey, serviceId, templateId } = personalData;
 
-  // Initialize EmailJS
   emailjs.init(publicKey);
 
   const form = document.querySelector("#contact-form");
