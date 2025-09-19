@@ -1,4 +1,5 @@
 import renderAllContents from './render-contents.js';
+import emailSender from './email-sender.js';
 
 // ================================
 //  NAVIGATION OBSERVER
@@ -37,7 +38,7 @@ const onscrollElementsAnimation = () => {
    gsap.registerPlugin(ScrollTrigger);
 
   const scrollerTarget = window.innerWidth > 900 ? ".content-sections" : null;
-  const animationStart = window.innerWidth > 900 ? "top 3500%" : "top 97.2%";
+  const animationStart = window.innerWidth > 900 ? "top 5000%" : "top 97.2%";
 
   // Sections Elements Animation(Except Language Bar)
   const sectionsElements = document.querySelectorAll(".content-sections section *:not(.language-label):not(.language-bar .bar)");
@@ -108,6 +109,7 @@ const toggleMoreProject = () => {
 // ================================
 function main(){
   renderAllContents();
+  emailSender();
 
   document.addEventListener('DOMContentLoaded', () => {
     observeActiveNav();

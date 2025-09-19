@@ -27,7 +27,7 @@ export const personalData = {
 
   // EmailJS Configuration(To make the contact functionable to when visitors message you in contact form it will send to your email)
   publicKey: 'vKvjn95XxY5HhOt07', // Go to emailJS.com, sign up, and get your public-key, then paste here
-  serviceId: 'service_71bjwbo', // Go to emailJS.com, sign up, and get your service-id then, paste here. 
+  serviceId: 'service_pss1i7s', // Go to emailJS.com, sign up, and get your service-id then, paste here. 
   templateId: 'template_gqf06fp',  // Go to emailJS.com, sign up, and get your template-id then, paste here. 
 };
 
